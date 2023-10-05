@@ -2,13 +2,20 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Link](#link)
 - [Built With](#built-with)
 - [Installation](#installation)
 - [Walkthrough](#walkthrough)
 
 ## Description
 
-This app is a text editor that runs in the browser and is a single-page application that meets Progressive Web Application (PWA) criteria. It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The app will also function offline. Data is stored to an IndexedDB using a package called ```idb``` which features a number of methods that are useful for storing and retrieving data (used by companies like Google and Mozilla).
+This app is a text editor that runs in the browser and is a single-page application that meets Progressive Web Application (PWA) criteria. User can write notes or code snippets with or without internet.
+
+It features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The app will also function offline. Data is stored to an IndexedDB using a package called ```idb``` which features a number of methods that are useful for storing and retrieving data (used by companies like Google and Mozilla).
+
+## Link
+
+<p><a href="https://just-another-text-edit0r-bd37dce72f66.herokuapp.com/">JATE</a></p>
 
 ## Built with
 
@@ -26,9 +33,18 @@ Please install the following if you have not installed:
 
 Add these files:
 * package.json (by running npm init)
-* gitignore (to ignore node_modules)
+* gitignore
 
 ## Walkthrough
 
 1. run ```npm install``` to ensure all packages are installed
-2. ```npm run start``` to start the application in the backend 
+2. ```npm run start``` to start the application in the backend and serve the client
+* Webpack will bundle Javascript files in a ```dist``` folder, it will also generate HTML file, service worker and manifest file.
+
+**Application's functionality and download**
+
+**Application's manifest.json**
+
+**Application's registered service worker**
+
+**Application's IndexedDB storage**
